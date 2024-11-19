@@ -5,6 +5,8 @@
 [GENie](https://github.com/bkaradzic/genie#what-is-it) - Project generator tool
 ===============================================================================
 
+[![Build and Upload Artifact](https://github.com/bkaradzic/GENie/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/bkaradzic/GENie/actions/workflows/build.yml)
+
 What is it?
 -----------
 
@@ -16,13 +18,13 @@ Supported project generators:
  * GNU Makefile
  * [JSON Compilation Database][jcdb]
  * Ninja (experimental)
- * Visual Studio 2010, 2012, 2013, 2015, 2017, 2019
+ * Visual Studio 2010, 2012, 2013, 2015, 2017, 2019, 2022
  * XCode
 
 Download (stable)
 -----------------
 
-	version 1167 (commit b139103697bbb62db895e4cc7bfe202bcff4ff25)
+	version 1181 (commit 29e6832fdf3b106c0906d288c8ced6c0761b8985)
 
 Linux:  
 https://github.com/bkaradzic/bx/raw/master/tools/bin/linux/genie
@@ -125,7 +127,7 @@ of Premake 4.4 beta 5, and there is no intention to keep it compatible with it.
  - Added `iostargetplatformversion`, `macostargetplatformversion`, and
    `tvostargetplatformversion` to specify XCode OS target version.
  - Removed the `xcode3`, and `xcode4` actions.
- - Added the `xcode8`, `xcode9`, `xcode10`, and `xcode11` actions.
+ - Added the `xcode8`, `xcode9`, `xcode10`, `xcode11` and `xcode14` actions.
  - Added `systemincludedirs` that are always searched after directories added
    using `includedirs`.
  - Added `NoRuntimeChecks` flag to disable Basic Runtime Checks in non-optimized
@@ -141,6 +143,7 @@ of Premake 4.4 beta 5, and there is no intention to keep it compatible with it.
  - Removed FASTBuild.
  - Removed Qbs support.
  - Added vs2022 support.
+ - Added xcode15 action with visionOS support.
 
 build - GENie build system scripts
 ----------------------------------
